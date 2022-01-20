@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>회원가입</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: solid 1px black;
+            border-collapse: separate;
+
+        }
+
+        th,
+        td {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h3>회원가입</h3>
+    <table>
+        <form>
+            <tr>
+                <td><label>아이디 </td>
+                <td> <input type="text" name="id" autofocus></label></td>
+            </tr>
+            <tr>
+                <td><label>이름</td>
+                <td> <input type="text" name="name"></label></td>
+            </tr>
+            <td><label>비밀번호 </td>
+            <td><input type="password" name="password"></label></td>
+            <tr>
+                <td> <label>비밀번호확인</td>
+                <td> <input type="password" name="password"></label></td>
+            </tr>
+            <tr>
+                <td><label>전화번호 </td>
+                <td><input type="tel" name="tel" placeholder="010-123-4567"></label></td>
+            </tr>
+            <tr>
+                <td> <label>이메일 </td>
+                <td><input type="email" name="email"></label></td>
+            </tr>
+            <tr>
+                <td> 문자수신여부</td>
+                <td> <label><input type="radio" name="agree" value="yes" checked> 예 </label>
+                    <label><input type="radio" name="agree" value="no"> 아니오 </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td> 가입경로</td>
+                <td> <label><input type="checkbox" name="method" value="친구 소개">친구 소개</label>
+                    <label><input type="checkbox" name="method" value="인터넷 검색">인터넷 검색</label>
+                    <label><input type="checkbox" name="method" value="블로그">블로그</label>
+                    <label><input type="checkbox" name="method" value="기타">기타</label>
+                </td>
+            </tr>
+        </form>
+
+
+
+
+    </table>
+</body>
+
+</html>
